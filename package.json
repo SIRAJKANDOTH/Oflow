@@ -1,0 +1,25 @@
+{
+  "name": "oflow-web-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start-all",
+    "start-all": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd backend && node server.js",
+    "start-frontend": "cd frontend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amart138/oflow_web_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amart138/oflow_web_app/issues"
+  },
+  "homepage": "https://github.com/Amart138/oflow_web_app#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
